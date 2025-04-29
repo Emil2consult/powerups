@@ -1,0 +1,10 @@
+{
+  "name": "Date Finder Power-Up",
+  "capabilities": {
+    "card-detail-badges": [
+      {
+        "dynamic": "https://your-netlify-site.netlify.app/client.js"
+      }
+    ]
+  }
+}
