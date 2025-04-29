@@ -12,13 +12,8 @@ TrelloPowerUp.initialize({
               return t.alert({ message: 'No dates found.', duration: 4 });
             }
 
-            const formatted = dates.map(d => d.toDateString()).join('\\n');
-            return t.alert({
-              title: 'Detected Dates',
-              url: './iframe.html',
-              height: 150,
-              args: { foundDates: formatted }
-            });
+            const formatted = dates.map(d => d.toDateString()).join('\n');
+            return t.alert({ message: formatted, duration: 10 });
           });
       }
     }];
