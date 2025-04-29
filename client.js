@@ -13,7 +13,7 @@ TrelloPowerUp.initialize({
             }
 
             const formatted = dates.map(d => d.toDateString()).join('\\n');
-            return t.popup({
+            return t.alert({
               title: 'Detected Dates',
               url: './iframe.html',
               height: 150,
