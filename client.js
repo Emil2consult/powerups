@@ -1,5 +1,3 @@
-var Promise = TrelloPowerUp.Promise;
-
 TrelloPowerUp.initialize({
   'card-detail-badges': function(t, options) {
     return t.card('desc')
