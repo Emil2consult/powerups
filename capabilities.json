@@ -3,7 +3,7 @@
   "capabilities": {
     "card-detail-badges": [
       {
-        "dynamic": "https://your-netlify-site.netlify.app/client.js"
+        "url": "https://emil2consult.github.io/powerups/client.js"
       }
     ]
   }
