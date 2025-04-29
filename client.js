@@ -12,7 +12,7 @@ TrelloPowerUp.initialize({
               return t.alert({ message: 'No dates found.', duration: 4 });
             }
 
-            return t.alert({ message: dates, duration: 10 });
+            return t.alert({ message: 'Dates found.', duration: 10 });
           });
       }
     }];
