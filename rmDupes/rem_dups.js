@@ -1,7 +1,19 @@
+// Move duplicate to bin
+
+
+// Duplicate detectionm
+
+
+// Scan all cards and return a list of all cards
+
+
 // Scan all lists and display a list 
 function scanBoardForList(t) {
   return t.lists('all').then(function(lists) {
-    console.log(JSON.stringify(lists, null, 2));
+    const listNames = lists.map(list => ({
+      name: list.name
+    }));
+    console.log(JSON.stringify(listNames, null, 2));
     return listNames;
   });
 }
