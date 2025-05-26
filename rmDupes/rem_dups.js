@@ -1,11 +1,11 @@
 TrelloPowerUp.initialize({
   'board-buttons': function(t, options) {
     return [{
-      text: 'Remove duplicate',
-      callback: async function(t) {
-        await t.alert({ message: 'Hej.', duration: 4 });
-
-        return t.alert({ message: 'Då', duration: 4 });
+      icon: 'https://cdn-icons-png.flaticon.com/512/25/25231.png', // Change to your icon
+      text: 'My Button',
+      callback: function(t) {
+        // Empty callback
+        return t.alert({ message: 'Då', duration: 4 });;
       }
     }];
   }
