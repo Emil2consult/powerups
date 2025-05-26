@@ -3,19 +3,9 @@ TrelloPowerUp.initialize({
     return [{
       text: 'Remove duplicate',
       callback: async function(t) {
-        await t.popup({
-          title: 'Processing...',
-          url: 'processing.html',
-          height: 100
-        });
+        await t.alert({ message: 'Hej.', duration: 4 });
 
-        await new Promise(resolve => setTimeout(resolve, 10000));
-
-        return t.popup({
-          title: 'Done!',
-          url: 'done.html',
-          height: 150
-        });
+        return t.alert({ message: 'Då', duration: 4 });
       }
     }];
   }
