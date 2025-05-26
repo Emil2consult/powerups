@@ -9,12 +9,8 @@
 
 // Scan all lists and display a list 
 function scanBoardForList(t) {
-  return t.lists('all').then(function(lists) {
-    const listNames = lists.map(list => ({
-      id: list.id,
-      name: list.name
-    }));
-    console.log(JSON.stringify(listNames, null, 2));
+  return t.lists('name').then(function(lists) {
+    console.log(JSON.stringify(lists, null, 2));
   });
 }
 
