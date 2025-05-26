@@ -5,11 +5,12 @@ var onBtnClick = function (t, opts) {
   t.alert({ message: 'Duplicates test.', duration: 4 });
 };
 
-// Send card to bin
+// Scan all lists and display a list 
 function scanBoardForList(t) {
-  return t.board("all").then(function (board) {
-      console.log(JSON.stringify(board, null, 2));
-    });
+  return t.lists('all').then(function(lists) {
+    console.log(JSON.stringify(lists, null, 2));
+    return listNames;
+  });
 }
 
 window.TrelloPowerUp.initialize({
