@@ -11,10 +11,10 @@
 function scanBoardForList(t) {
   return t.lists('all').then(function(lists) {
     const listNames = lists.map(list => ({
+      id: list.id,
       name: list.name
     }));
     console.log(JSON.stringify(listNames, null, 2));
-    return listNames;
   });
 }
 
