@@ -9,15 +9,19 @@
 
 // Scan all lists and display a list 
 function scanBoardForList(t) {
-  return t.lists('name', 'id').then(function(lists) {
-    console.log(lists);
-  });
+  return t.lists('name', 'id').then(function(lists) {  });
 }
 
 // On click function
-var onBtnClick = function (t, opts) {
+var onBtnClick = async function (t, opts) {
+  // Indicate button press
   console.log('Someone clicked the button');
-  scanBoardForList(t);
+
+  // Find all lists
+  const lists = await t.lists('name', 'id');
+  console.log('Lists on board:', lists);
+
+  // Alert user
   t.alert({ message: 'Duplicates test.', duration: 4 });
 };
 
